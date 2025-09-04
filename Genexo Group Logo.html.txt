@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genexo Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #ffffff;
+      padding: 15px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #eaf4fc, #ffffff);
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      color: #0066cc;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      background: #0066cc;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .hero button:hover {
+      background: #005bb5;
+    }
+
+    /* Section */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0066cc;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #444;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form button {
+      background: #0066cc;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background: #005bb5;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="genexo_logo_hd.png" alt="Genexo Group Logo">
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Genexo Group</h1>
+    <p>Inspired by Vision, Driven by Values</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+  </div>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Genexo Group is a forward-thinking organization driven by innovation and integrity. 
+    We are committed to delivering excellence across industries including trading, import-export, and corporate services.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide comprehensive business solutions covering international trade, strategic consulting, 
+    and global partnerships. Our goal is to empower businesses and create sustainable growth opportunities.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:sachintiwari9235@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Requirements" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Genexo Group | Inspired by Vision, Driven by Values</p>
+  </footer>
+
+</body>
+</html>
